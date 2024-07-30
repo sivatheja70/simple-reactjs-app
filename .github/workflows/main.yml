@@ -43,7 +43,7 @@ jobs:
 
         env:
           VERCEL_TOKEN: "e6zAhQ5ufDMeXPZ62B9ZUF9H"
-          VERCEL_PROJECT_ID: "prj_dMLdwDjaYOOmBnjAa6NRaSb9amUk"
+          VERCEL_PROJECT_ID: "prj_P6YJdMmGTqVUT9gxVBUlOR9BKx4y"
           VERCEL_ORG_ID: "dBNZUFq1wfhvrdITtbTohoAl"
 
       - name: vercel-preview-url
