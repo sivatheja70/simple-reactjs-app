@@ -39,9 +39,7 @@ jobs:
         id: dev_vercel_deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
         run: |
-          mv "./public/css" "./dist/css"
-          mv "./vercel.json" "./dist"
-          npx vercel --token ${{ secrets.VERCEL_TOKEN }}
+          npx vercel --token "e6zAhQ5ufDMeXPZ62B9ZUF9H"
 
         env:
           VERCEL_TOKEN: "e6zAhQ5ufDMeXPZ62B9ZUF9H"
@@ -68,7 +66,7 @@ jobs:
           cd app
           mv "./public/css" "./dist/css"
           mv "./vercel.json" "./dist"
-          npx vercel --token ${{ secrets.VERCEL_TOKEN }} $prodRun
+           npx vercel --token "e6zAhQ5ufDMeXPZ62B9ZUF9H" $prodRun
         env:
           VERCEL_TOKEN: "e6zAhQ5ufDMeXPZ62B9ZUF9H"
           VERCEL_PROJECT_ID: "prj_dMLdwDjaYOOmBnjAa6NRaSb9amUk"
