@@ -39,7 +39,7 @@ jobs:
         id: dev_vercel_deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
         run: |
-          npx vercel --token "e6zAhQ5ufDMeXPZ62B9ZUF9H" $prodRun
+          npx vercel --token "e6zAhQ5ufDMeXPZ62B9ZUF9H" --prod
 
         env:
           VERCEL_TOKEN: "e6zAhQ5ufDMeXPZ62B9ZUF9H"
